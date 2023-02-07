@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.about-section{
+    background: url(https://tse2.mm.bing.net/th?id=OIP.zMnB12uDtHhxkKAxtRfaJAHaEo&pid=Api&P=0) no-repeat left;
+    background-size: 55%;
+    background-color: #6c6c6c;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #969696;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+
+video{
+    margin-bottom: 20px;
+}
+
+header {
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+    .panda{
+        font: normal 4em 'Playfair Display SC', serif;
+        text-align:center;
+    }
+
+    nav {
+        background-color: #000000;
+        z-index: +10;
+    }
+     
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        }
+        
+    nav ul li {
+        display:inline-block;
+        background-color: #000000;
+        }
+     
+    nav a {
+        display:block;
+        padding:0 10px;	
+        color:#FFF;
+        font-size:20px;
+        line-height: 60px;
+        text-decoration:none;
+    }
+     
+    nav a:hover { 
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+    }
+    /* Fisrt level Dropdown */
+    nav ul ul li {
+        width:170px;
+        float:none;
+        display:list-item;
+        position: relative;
+    }
+     
+    /* Second, Third and more levels	*/
+    nav ul ul ul li {
+        position: relative;
+        top:-60px; 
+        left:170px;
+    }
+    
+    li > a:after { content:  ' +'; }
+    li > a:only-child:after { content: ''; }
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        display: none;
+        position: absolute; 
+        top: 60px; /* the height of the main nav */
+    }
+        
+    /* Display Dropdowns on Hover */
+    nav ul li:hover > ul {
+        display:inherit;
+    }
