@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+     padding: 16px;
+     background-color: #ce31ac;
+   }
+   
+   .birthday-card {
+     margin: 40px auto;
+     padding: 16px;
+     max-width: 400px;
+     background-color: white;
+     text-align: center;
+     box-shadow: 0 24px 40px -8px #311B92;
+   }
+
+   
+.btn:active{
+    width: 300px;
+    height: 300px;
+  }
+   .birthday-card img {
+     width: 100%;
+   }
+   
+   .source-link {
+     text-align: center;
+     color: #311B92;
+     text-decoration: underline;
+   }
+   
+   .source-link a {
+     color: #311B92;
+     text-decoration: none;
+   }
+   .myDIV:hover + .hide {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .btn {
+    background-color: #ddd;
+    color: black;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #d31b96;
+    color: white;
+  }
+     
+  #div5{
+    width: 100px;
+    height: 100px;
+    background: rgb(217, 11, 152);
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  #div5:hover {
+    width: 400px;
+  }
+  
