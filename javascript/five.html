@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram</title>
+    <script>
+        function isAnagram (str1, str2) {
+if (str1.length !== str2.length) {
+    return false;
+}
+var s1 = str1.split('').sort().join('');
+var s2 = str2.split('').sort().join('');
+return (s1 === s2);
+}
+
+console.log(isAnagram('abc','cba'));
+console.log(isAnagram('listen','silent')); 
+console.log(isAnagram('dog','doog'));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
