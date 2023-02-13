@@ -1,0 +1,51 @@
+<<head>
+  <title>First page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="first.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script type="text/javascript">
+  $(window).on('scroll',function(){
+      if($(window).scrollTop()){
+          $('nav').addClass('black');
+      }
+      else{
+          $('nav').removeClass('black');
+      }
+  })
+/menu button onclick function/         $(document).ready(function(){
+          $('.menu h4').click(function(){
+              $("nav ul").toggleClass("active")
+      })
+      })
+  </script>
+</head>
+<body>
+  <div class="responsive-bar">
+  <div class="logo">
+      <img src="http://www.mhf.org.au/media/zoo/images/yourlogohere_2cb8c31ab01096e7842d781ac311a776.png" alt="logo"/>
+      </div>
+      <div class="menu">
+      <h4>Menu</h4>
+      </div>
+  </div>
+<nav>
+      <div class="logo">
+      <h2>best tuning</h2>
+      </div>
+   <ul>
+      <li><a href="#">home</a></li>
+       <li><a href="#">projects</a></li>
+       <li><a href="#">team</a></li>
+       <li><a href="#">contacts</a></li>
+      </ul>
+      <button class="button" style="vertical-align:middle"><span>Book an appointment</span></button>
+
+  </nav>
+  <div class="text">
+    <p style="color: white;">TUNING PERFECTION</h3>
+    <h1 style="color: white;">Tuning is an upgrade<br>that unlocks hidden<br>potential of your car.</h2>
+      <i class="fas fa-arrow-alt-circle-down" style="font-size:60px;color:lightblue;"></i> <p style="color: white;">Explore</p>
+  </div>
+</body>
