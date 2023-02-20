@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta">
+    <link rel="stylesheet" href="second.css">
+    <script src="/second/second.js"></script>
+<title>Second Page</title>
+
+<style>
+.container {
+  display: flex;
+  height: 100%;
+  padding: 20px;
+  cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.items {
+  margin-left: 20px;
+  padding: 40px;
+}
+body{
+    background-image: url(/images/sec.jpeg);
+    background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  
+    <div class="text">
+<p style="color:white;" class="one">WHY DO YOU WANT IT?</p>
+<h1 style="color:white;" class="two">What is Tuning and<br>Why do You Want It?</h1>
+<p style="color:white;" class="three" >Tuning is an upgrade to the software in the vehicle's computer. <br> Custom software is installed that charges many parameters<br>that control the way the engine operates. With proper tuning,<br>you can increase both power and fuel as economy
+</p>
+</div>
+<p id="demo"></p>
+<div class="container" onclick="showMsg('Other features: 1)Infotainment systems  2)Advanced safety features           3)Automatic transmission     4)Adaptive cruise control ')">
+<div class="items item1">
+<i id="icon" class="material-icons" style="font-size:60px;color:red;">timer</i>
+<p style="color:white;" class="three">A comprehensive tool<br>for high horsepower<br>builds</p>
+</div>
+<div class="items item2">
+<img id="icon" src="/images/gas-pump.png">
+<p style="color:white;" class="three">With proper tuning,<br> you can increase fuel<br> economy</p>
+</div>
+</div>
+<script type="application/javascript">
+  function showMsg(item) {
+  alert(item);
+}
+</script>
+
+</body>
+</html> 
