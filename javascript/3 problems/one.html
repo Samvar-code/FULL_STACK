@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript change image onclick event
+</title>
+<style type="text/css">
+	h2 {
+    text-align: center;
+    font-size: 30px;
+	}
+	img#getImage {
+    width: 300px;
+    height: auto;  
+    border: 4px solid #a1a1a1;  
+	}
+	div {
+    text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<h2>Click on the Monkey!!</h2>
+		<img src="https://www.nicepng.com/png/detail/324-3243838_hear-no-evil-monkey-emoji-monkey-covering-ears.png" onclick="imagefun()" id="getImage">
+    	
+    </div>
+    <div>
+    </div>
+    <script>
+        function imagefun() {
+            var Image_Id = document.getElementById('getImage');
+            if (Image_Id.src.match("https://www.nicepng.com/png/detail/324-3243838_hear-no-evil-monkey-emoji-monkey-covering-ears.png")) {
+                Image_Id.src = "https://img.icons8.com/emoji/512/see-no-evil-monkey.png";
+            }
+            else {
+                Image_Id.src = "https://www.nicepng.com/png/detail/324-3243838_hear-no-evil-monkey-emoji-monkey-covering-ears.png";
+            }
+        }        
+    </script>
+
+</body>
+</html>
