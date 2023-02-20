@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script>
+        //forEach
+const countries = ['Apple','Banana','Cat']
+countries.forEach((element) => console.log(element))
+     //mapToSquareNumbers
+ const numbers = [1, 2, 3, 4, 5]
+const square = numbers.map((num) => num * num)
+console.log(square)
+  //countryStartWithE-UsingFilter
+  const names= ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland','Ethiopia']
+const aNames = names.filter(name => name.charAt(0) === "E");
+console.log(aNames);
+//returnAnArrayWithOnlyString
+function getStringLists(array) {
+    var arr = [];
+    for (let i = 0; i < array.length; i++) {
+        if (typeof array[i] === 'string') {
+          arr.push(array[i]);
+        }
+    }
+    return arr;
+}
+console.log(getStringLists(['Ethiopia',789]))
+//ConcatenateUsingReduce
+ var arrayy = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+const concatenated = arrayy.reduce((accumulator, currentValue) => {
+  return accumulator +' '+ currentValue;
+ 
+}, '');
+console.log(concatenated+' are north american countries');
+//mostFrequentInitial
+function mostFrequentInitial(array) {
+  const counts = {};
+  for (let i = 0; i < array.length; i++) {
+    const initial = array[i][0].toLowerCase();
+    if (counts[initial]) {
+      counts[initial]++;
+    } else {
+      counts[initial] = 1;
+    }
+  }
+  let maxCount = 0;
+  let maxLetter = '';
+  for (const letter in counts) {
+    if (counts[letter] > maxCount) {
+      maxCount = counts[letter];
+      maxLetter = letter;
+    }
+  }
+  return maxLetter.toUpperCase();
+}
+const array= ['Estonia', 'Finland', 'Fiji', 'France', 'Norway', 'Iceland']
+const mostFrequent = mostFrequentInitial(array);
+console.log(`The most frequent initial letter is '${mostFrequent}'`);
+ //sciConstantsToTheirValuesUsingDestructors
+ const constants= [2.72, 3.14, 9.81, 37, 100]
+  let [e, pi, gravity, bodyTemp, boilingTemp] = constants
+  console.log(e,pi,gravity, bodyTemp, boilingTemp)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
